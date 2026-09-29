@@ -3,10 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { 
-  Instagram, 
-  Facebook, 
-  Twitter, 
-  Youtube, 
   Mail, 
   Phone, 
   MapPin, 
@@ -52,13 +48,6 @@ export default function Footer() {
             <p className="text-white/50 text-lg font-medium leading-relaxed max-w-md italic">
               "Elevating Himalayan exploration through precision safety and elite expedition management."
             </p>
-            <div className="flex gap-5">
-              {[Instagram, Facebook, Youtube, Twitter].map((Icon, i) => (
-                <Link key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-primary hover:border-primary/30 transition-all group">
-                   <Icon size={18} className="group-hover:scale-110 transition-transform" />
-                </Link>
-              ))}
-            </div>
           </div>
 
           <div className="lg:col-span-1"></div>
